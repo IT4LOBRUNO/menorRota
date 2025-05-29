@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+canvas {
+  border: 2px solid #929292;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #C0C2C5;
+}
+
+.vertice-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.desativado {
+  background-color: #ccc;
+  pointer-events: none;
+}
+
+.ativo {
+  background-color: #00aaff;
+  color: white;
+}
+
+.usina {
+  background-color: red;
+}
+
+#objetivo {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #80d7e2;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  width: 442px;
+  margin: 0 auto 10px auto;
+}
+
+#btn-reiniciar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.9;
+  user-select: none;
+  z-index: 10;
+  width: 80px;
+  height: 40px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#btn-reiniciar:hover {
+  background-color: #0056b3;
+}
+
+button.vertice-btn.visitado {
+    background-color: #ff4444;
+    color: white;
+    cursor: default;
+}
+
+button.vertice-btn.desativado {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+}
+
+button.vertice-btn.ativo {
+    background-color: #00cdff;
+    color: white;
+    cursor: pointer;
+}
+
+button.vertice-btn.usina {
+    background-color: #0000ff;
+    color: white;
+    cursor: default;
+}
+
+#caminho-container {
+    width: 300px;
+    height: 550px;
+    overflow-y: auto;
+    background-color: #C0C2C5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+#caminho-percorrido div {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#total-peso {
+    padding: 10px;
+    background-color: #979797;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#caminho-percorrido {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#btn-resposta {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.9;
+    user-select: none;
+    z-index: 10;
+    width: 140px;
+    height: 40px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-resposta:hover {
+    background-color: #218838;
+}

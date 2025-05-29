@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rede Elétrica</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="objetivo" class="objetivo"></div>
+        <div style="display: flex; gap: 20px;">
+            <div id="mapa-container" style="position: relative; width: 442px; height: 565px;">
+                <canvas id="mapa" width="442" height="565" style="position: absolute; top: 0; left: 0;"></canvas>
+                <div id="botoes-container" style="position: absolute; top: 0; left: 0;"></div>
+                <button id="btn-reiniciar" title="Reiniciar jogo">Reiniciar</button>
+                <button id="btn-resposta" title="Mostrar resposta">Mostrar Resposta</button>
+            </div>
+            <div id="caminho-container">
+                <h3 style="margin-top: 0;">Caminho percorrido</h3>
+                <div id="caminho-percorrido"></div>
+                <div id="total-peso" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
